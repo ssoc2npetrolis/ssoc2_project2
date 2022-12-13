@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <script src="../js/square-rect.js" defer></script>
+    <link rel="stylesheet" href="../css/style.css">
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SSOC2 - Project 2: Υπολογιστής Εμβαδόν</title>
+</head>
+<body>
+    <div class="header">Υπολογιστής Εμβαδόν</div>
+    <div class="calcMenu">
+    <p class="calcMenuP">Παρακαλώ επιλέξτε τον υπολογισμό που θέλετε να πραγματοποιήσετε:</p>
+        <div class="calcContainer">
+            <div class="menuButton"><a href="../index.html">Αρχική</a></div>
+            <div class="menuButton"><a href="../html/triangle.html">Εμβαδόν Τριγώνου</a></div>
+            <div class="menuButton"><a href="../html/90degtriangle.html">Εμβαδόν Ορθογωνίου Τριγώνου</a></div>
+            <div class="menuButton"><a href="../html/square-rect.html">Εμβαδόν Τετράγωνου / Ορθογωνίου Παραλληλογράμμου</a></div>
+            <div class="menuButton"><a href="../html/circle.html">Εμβαδόν Επιφάνειας Κύκλου</a></div>
+        </div>
+    </div>
+    <div class="calcDescription">
+        <h3>Περιγραφή:</h3>
+        <p class="calcDescriptionP">Το εμβαδόν του παραλληλογράμμου βρίσκεται πολλαπλασιάζοντας την βάση του σχήματος με το ύψος και δίδεται από τον μαθηματικό τύπο <b>E = βάση * ύψος</b><br>
+            Για να υπολογίσουμε το εμβαδόν E ενός τετραγώνου εάν γνωρίζουμε την πλευρά (a) του τετραγώνου, χρησιμοποιούμε τον μαθηματικό τύπο: <b>E = a * a</b> </p>
+            <div class="calcImg">
+                <img src="../img/square.png" alt="trigono" class="src" width="275px" height="180px">
+                <img src="../img/rectangle.png" alt="heron-calc" class="src" width="275px" height="180px">
+            </div>
+    </div>
+    <div class="calcDisplay">
+        <div class="inputs">
+            <div class="inputfieldfirst">A  <input id="a"></input></div>
+            <div class="inputfield">B  <input id="b"></input></div>
+            <button class="calcButton" onclick="onCalc(inputA.value, inputB.value)">Υπολογισμός</button>
+        </div>
+        <div class="calcResults"></div>
+    </div>
+    <div class="footer">Δημιουργήθηκε απο τον μαθητή Πετρολή Νικόλαο για την εργασία Project 2 του Start School of Code της SocialInnov.</div>
+</body>
+</html>
